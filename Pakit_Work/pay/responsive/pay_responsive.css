@@ -1,0 +1,223 @@
+@media only screen and (max-width: 1197px){
+    .pay_statement_with_checkbox{
+        padding-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 1160px){
+    .pay_first_card{
+        padding: 0 10px;
+    }
+    .pay_first_card .pay_baggage_information .pay_baggage_information_span{
+        font-size: 75%;
+    }
+    .pay_first_card .pay_baggage_information .pay_date{
+        text-align: left;
+    }
+    .first_card .baggage_information .pay_weight{
+        text-align: right;
+    }
+    .pay_icons{
+        margin-bottom: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 1050px){
+    .pay_pakit_information{
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .pay_baggage_weight{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 993px){
+    .pay_statement_with_checkbox{
+        padding-bottom: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    .pay_first_card .pay_baggage_information .pay_date{
+        text-align: center;
+    }
+    .pay_first_card .pay_baggage_information .pay_weight{
+        text-align: center;
+    }
+    .pay_first_card , .pay_second_card{
+        border-bottom: 1px solid #BFBFBF;
+    }
+    .pay_second_card .pay_pakit_information{
+        text-align: center;
+    }
+    .pay_statement_with_checkbox{
+        margin-bottom: 0px;
+    }
+    .pay_charges{
+        padding: 10px 50px 10px 50px;
+}
+}
+
+
+@media only screen and (max-width: 830px){
+    .pay_money{
+        margin-right: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    #pay_myNavbar ul li{
+        text-align: center;
+    }   
+}
+
+
+@media only screen and (max-width: 550px){
+    .pay_safety_tips{
+        margin-top: 10px;
+        font-size: 80%;
+    }
+    
+    .pay_total_amount_and_net_money{
+        margin-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 446px){
+    .pay_main_row .pay_main_row_ul .pay_main_row_li{
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .new_pakit .pay_main_row_a{
+        padding-right: 15px;
+    }
+    .current_pakit .pay_main_row_a{
+        padding-left: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 442px){
+    .pay_terms_and_conditions .pay_terms_statement{
+        font-size: 80%;
+        margin-left: 5px;
+    }
+    .pay_safety_tips .pay_safety_tips_ul{
+        font-size: 90%;   
+    }
+    .pay_bill{
+        padding: 10px 10px;
+    }
+    .pay_statement_with_checkbox{
+        text-align: left;
+        margin-left: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width: 350px){
+    .pay_statement_with_checkbox{
+        font-size: 80%;
+    }
+    .pay_statement{
+        padding-left: 0px;
+    }
+    .pay_safety_tips{
+        margin-top: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 330px){
+    .pay_Pay_button{
+        font-size: 95%;
+    }
+}
+
+
+/*      ===========================================     FOR MOBLIE VIEW     =================================       */
+
+    
+@media only screen and (max-width: 425px){
+    .pay_main_row{
+        display: none;
+    }
+    .pay_exterior_box{
+        margin-top: 120px;
+    }
+    .pay_interior_upper_box{
+        position: fixed;
+        top: 50px;
+        left: 0;
+        z-index: 100;
+        height: 72px;
+    }
+    .pay_interior_upper_box .pay_flight_logo , .pay_dots , .pay_collapse_link{
+        display: none;
+    }
+    .pay_baggage_weight{
+        float: left;
+        margin-left: 10px;
+        padding-right: 0;
+        font-size: 12px;
+    }
+    .pay_date{
+        padding-left: 10px;
+    }
+    .pay_from_to_profile{
+        float: right;
+        margin-right: 20px;
+        font-size: 10px;
+        font-family: century gothic , sans-serif;
+    }
+    .pay_from_to_profile .pay_flight_direction img{
+        width: 80px;
+    }
+    .pay_connected_and_all_users{
+        visibility: hidden;
+    }
+    .pay_connected_and_all_users_2{
+        display: inline-block;
+    }
+    .pay_connected , .pay_all_users{
+        clear: both;
+        padding: 3px 35px;
+    }
+    .pay_connected_and_all_users_2 a:before{
+        bottom: -5px;   
+    }
+}
+
+@media only screen and (max-width: 409px){
+    .pay_connected_and_all_users{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .pay_connected_and_all_users{
+        display: none;
+    }
+    .pay_from_to_profile .connected_users_city{
+        font-size: 12px;
+    }
+    .pay_from_to_profile{
+        margin-left: 0;
+    }
+    .pay_from_to_profile .pay_flight_direction img{
+        width: 60px;
+    }
+    .pay_connected_and_all_users_2 a:before{
+        bottom: -10px;   
+    }
+}
+/*      =====================================================================================================       */

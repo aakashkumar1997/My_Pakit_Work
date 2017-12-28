@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Pakit </title>
+            <meta charset = "utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link type = "text/css" rel = "stylesheet" href = "css/new_pakit.css">
+            <link type = "text/css" rel = "stylesheet" href = "responsive/new_pakit_responsive.css">
+            <script>
+                $(document).ready(function(){
+                    $("#from_input").focus(function(){
+                    if(($("#from_input").val()) == ""){
+                    $("#from_source_label").removeClass("new_pakit_movelabeltodefault");
+                    $("#from_source_label").removeClass("new_pakit_label");
+                    $("#from_source_label").addClass("new_pakit_movelabelup");
+                    $("#from_input").removeClass("new_pakit_underlinedefault");	
+                    $("#from_input").addClass("new_pakit_blueunderline");    
+                        }
+                    if($("#destination_input").val() == ""){
+                    $("#to_destination_label").addClass("new_pakit_movelabeltodefault");
+                    $("#destination_input").addClass("new_pakit_underlinedefault");    
+                        }		
+                    if($("#flight_input").val() == ""){
+                    $("#flight_date_label").addClass("new_pakit_movelabeltodefault");		
+                    $("#flight_input").addClass("new_pakit_underlinedefault");    
+                        }
+                    if($("#weight_input").val() == ""){
+                    $("#weight_carry_label").addClass("new_pakit_movelabeltodefault");
+                    $("#weight_input").addClass("new_pakit_underlinedefault");    
+                        }
+                    });
+                });
+
+
+                $(document).ready(function(){
+                    $("#destination_input").focus(function(){
+                    if(($("#destination_input").val()) == ""){
+                    $("#to_destination_label").removeClass("new_pakit_label");    
+                    $("#to_destination_label").removeClass("new_pakit_movelabeltodefault");
+                    $("#to_destination_label").addClass("new_pakit_movelabelup");
+                    $("#destination_input").removeClass("new_pakit_underlinedefault");	
+                    $("#destination_input").addClass("new_pakit_blueunderline");      
+                        }
+                    if($("#from_input").val() == ""){
+                    $("#from_source_label").addClass("new_pakit_movelabeltodefault");
+                    $("#from_input").addClass("new_pakit_underlinedefault");    
+                        }		
+                    if($("#flight_input").val() == ""){
+                    $("#flight_date_label").addClass("new_pakit_movelabeltodefault");
+                    $("#flight_input").addClass("new_pakit_underlinedefault");    
+                        }
+                    if($("#weight_input").val() == ""){
+                    $("#weight_carry_label").addClass("movelabeltodefault");
+                    $("#weight_input").addClass("underlinedefault");    
+                        }					
+                    });
+                });
+
+                $(document).ready(function(){
+                    $("#flight_input").focus(function(){
+                    if($("#flight_input").val() == ""){
+                    $("#flight_date_label").removeClass("new_pakit_label");
+                    $("#flight_date_label").removeClass("new_pakit_movelabeltodefault");
+                    $("#flight_date_label").addClass("new_pakit_movelabelup");
+                    $("#flight_input").removeClass("new_pakit_underlinedefault");	
+                    $("#flight_input").addClass("new_pakit_blueunderline"); 
+                        }
+                    if($("#destination_input").val() == ""){
+                    $("#to_destination_label").addClass("new_pakit_movelabeltodefault");
+                    $("#destination_input").addClass("new_pakit_underlinedefault");    
+                        }		
+                    if($("#from_input").val() == ""){
+                    $("#from_source_label").addClass("new_pakit_movelabeltodefault");
+                    $("#from_input").addClass("new_pakit_underlinedefault");    
+                        }
+                    if($("#weight_input").val() == ""){
+                    $("#weight_carry_label").addClass("new_pakit_movelabeltodefault");
+                    $("#weight_input").addClass("new_pakit_underlinedefault");    
+                        }					
+                    });
+                });
+
+                $(document).ready(function(){
+                    $("#weight_input").focus(function(){
+                    if($("#weight_input").val() == ""){
+                    $("#weight_carry_label").removeClass("new_pakit_label");    
+                    $("#weight_carry_label").removeClass("new_pakit_movelabeltodefault");	
+                    $("#weight_carry_label").addClass("new_pakit_movelabelup");
+                    $("#weight_input").removeClass("new_pakit_underlinedefault");	
+                    $("#weight_input").addClass("new_pakit_blueunderline");    
+                        }
+                    if($("#destination_input").val() == ""){
+                    $("#to_destination_label").addClass("new_pakit_movelabeltodefault");
+                    $("#destination_input").addClass("new_pakit_underlinedefault");    
+                        }		
+                    if($("#flight_input").val() == ""){
+                    $("#flight_date_label").addClass("new_pakit_movelabeltodefault");
+                    $("#flight_input").addClass("new_pakit_underlinedefault");    
+                        }
+                    if($("#from_input").val() == ""){
+                    $("#from_source_label").addClass("new_pakit_movelabeltodefault");
+                    $("#from_input").addClass("new_pakit_underlinedefault");    
+                        }				
+                    });
+                });
+            </script>
+        </head>
+<!--    ******************************************      BODY STARTS     **********************************************  -->        
+        <body class = "new_pakit_body">
+            <div class = "container_box">
+                
+                
+<!--    ******************************************      NAVBAR STARTS     **********************************************  -->                  
+                <nav class="navbar navbar-default new_pakit_navigation">
+                    <div class="container-fluid">
+                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#new_pakit_myNavbar">
+        					<span class="icon-bar"></span>
+      					  	<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>                        
+      					</button>
+      					<div class="collapse navbar-collapse" id="new_pakit_myNavbar">
+                        <ul class="nav navbar-nav navbar-right new_pakit_myNavbar_ul">
+                            <li class = "new_pakit_myNavbar_li"><a href = "#">A<img src = "#"></a></li>
+                            <li class = "new_pakit_myNavbar_li"><a href = "#">B<img src = "#"></a></li>
+                            <li class = "new_pakit_myNavbar_li"><a href = "#">C<img src = "#"></a></li>
+                            <li class = "new_pakit_myNavbar_li"><a href = "#">D<img src = "#"></a></li>
+                            <li class = "new_pakit_myNavbar_li"><a href = "#">E<img src = "#"></a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+<!--    ******************************************      NAVBAR ENDS     **********************************************  -->                  
+
+                
+                
+<!--    ******************************************   NEW PAKIT AND CURRENT PAKIT ROW STARTS   **********************************************  --> 
+                <div class = "new_pakit_main_row">
+                    <ul class = "new_pakit_main_row_ul">
+                        <li class = "new_pakit_main_row_li"><a href = "#" class = "new_pakit_main_row_a">New Pakit</a></li>
+                        <li class = "new_pakit_main_row_li"><a href = "#" class = "new_pakit_main_row_a">Current Pakit</a></li>
+                    </ul>
+                </div>
+                <hr>
+<!--    ****************************************** NEW PAKIT AND CURRENT PAKIT ROW ENDS    **********************************************  -->             
+                <div class = "row new_pakit_box">
+
+<!--    ******************************************      LEFT BOX STARTS     **********************************************  -->                   
+                    <div class ="col-md-4 new_pakit_left_box">
+                        <div id="MainMenu">
+                          <div class="list-group panel new_pakit_options">
+                                <a href="#new_pakit_club_baggage_extension" class="list-group-item list-group-item-success new_pakit_options_2 new_pakit_club_baggage" data-toggle="collapse" data-parent="#MainMenu">CLUB BAGGAGE</a>
+                                <div class="collapse" id="new_pakit_club_baggage_extension"></div>
+                                <a href="#new_pakit_deliver_pakit_extension" class="list-group-item list-group-item-success new_pakit_options_2 new_pakit_deliver_pakit" data-toggle="collapse" data-parent="#MainMenu">DELIVER A PAKIT</a>
+                                <div class="collapse" id="new_pakit_deliver_pakit_extension"></div>
+                                <a href="#new_pakit_send_pakit_extension" class="list-group-item list-group-item-success new_pakit_options_2 new_pakit_send_pakit" data-toggle="collapse" data-parent="#MainMenu">SEND A PAKIT</a>
+                                <div class="collapse" id="new_pakit_send_pakit_extension"></div>
+                                <a href="#new_pakit_request_pakit_extension" class="list-group-item list-group-item-success new_pakit_options_2 new_pakit_request_pakit" data-toggle="collapse" data-parent="#MainMenu">REQUEST A PAKIT</a>
+                                <div class="collapse" id="new_pakit_request_pakit_extension"></div>
+                          </div>
+                        </div>
+                    </div>
+<!--    ******************************************    LEFT BOX ENDS     **********************************************  -->                      
+                    
+                    
+                    
+<!--    ******************************************      RIGHT BOX STARTS     **********************************************  -->  
+                    <div class = "col-md-8 new_pakit_right_box">
+                        <div class = "new_pakit_inner_box">
+                            <form class = "new_pakit_form">
+                                <p><label id = "from_source_label" class = "new_pakit_label">From(Source)</label></p>
+                                <p class = "new_pakit_input_feild"><img src = "SVGs/source.svg"><input type = "text" id = "from_input" class = "new_pakit_input"/></p>
+                                <p><label id = "to_destination_label" class = "new_pakit_label">To(Destination)</label></p>
+                                <p class = "new_pakit_input_feild"><img src = "SVGs/destination.svg"><input type = "text" id = "destination_input" class = "new_pakit_input"/></p>
+                                <p><label id = "flight_date_label" class = "new_pakit_label">Flight Date</label></p>
+                                <p class = "new_pakit_input_feild"><img src = "SVGs/flight.svg"><input type = "text" id = "flight_input" class = "new_pakit_input"/></p>
+                                <p><label id = "weight_carry_label" class = "new_pakit_label">Weight you can carry</label></p>
+                                <p class = "new_pakit_input_feild"><img src = "SVGs/suitcase-04.svg"><input type = "text" id = "weight_input" class = "new_pakit_input"/></p>
+                                <p id = "new_pakit_input_para"><button class = "new_pakit_input new_pakit_button">POST AND VIEW USERS</button></p>
+                            </form>
+                        </div>
+                    </div>
+<!--    ******************************************      RIGHT BOX ENDS     **********************************************  -->                   
+                </div>
+            </div>
+        </body>
+<!--    ******************************************      BODY ENDS     **********************************************  -->          
+</html>

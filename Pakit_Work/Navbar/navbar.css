@@ -1,0 +1,48 @@
+
+.connected_users_navigation{
+    background-color: deeppink;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+}
+#connected_users_myNavbar{
+    float: right;
+    margin-top: 10px;
+}
+.connected_users_myNavbar_icons{
+    padding: 10px 20px;
+    text-align: center;
+}
+.connected_users_myNavbar_images{
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}

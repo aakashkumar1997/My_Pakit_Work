@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Pakit </title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel = "stylesheet" type = "text/css" href = "css/login.css">
+            <link rel = "stylesheet" type = "text/css" href = "responsive/login_responsive.css">
+            <script>
+                $(document).ready(function(){
+                    $("#email").focus(function(){
+                        if(($("#email").val()) == ""){
+                        $("#email_label").removeClass("login_movelabeltodefault");	
+                        $("#email_label").addClass("login_movelabelup");
+                        $("#email").removeClass("login_underlinedefault");    
+                        $("#email").addClass("login_underlineinput");    
+                            }
+                        if($("#password").val() == ""){
+                        $("#password_label").addClass("login_movelabeltodefault");
+                        $("#password").removeClass("login_underlineinput");
+                        $("#password").addClass("login_underlinedefault");    
+                            }				
+                        });
+			     });
+                $(document).ready(function(){
+                    $("#password").focus(function(){
+                        if(($("#password").val()) == ""){
+                        $("#password_label").removeClass("login_movelabeltodefault");	
+                        $("#password_label").addClass("login_movelabelup");
+                        $("#password").removeClass("login_underlinedefault");    
+                        $("#password").addClass("login_underlineinput");    
+                            }
+                        if($("#email").val() == ""){
+                        $("#email_label").addClass("login_movelabeltodefault");
+                        $("#email").removeClass("login_underlineinput");
+                        $("#email").addClass("login_underlinedefault");    
+                            }				
+                        });
+			     });
+            </script>
+        </head>
+        
+        <!--    ******************************* BODY STARTS HERE ***********************    -->   
+            <body class = "login_body">
+                <div class = "container">            
+        <!--    ******************************* NAVBAR STARTS HERE ************************ -->
+                    <nav class="navbar navbar-default login_navigation">
+                    <div class="container-fluid">
+                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#login_myNavbar">
+        					<span class="icon-bar"></span>
+      					  	<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>                        
+      					</button>
+
+      					<div class="collapse navbar-collapse" id="login_myNavbar">                        
+                            <span class="dropdown">
+                                <span class="dropbtn login_myNavbar_icons">
+                                    <img class="login_myNavbar_images" src="SVGs/requests.svg"/>
+                                </span>
+                                <div class="dropdown-content dropdown-menu-right">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                            </span>
+                            <span class="dropdown">
+                                <span class="dropbtn login_myNavbar_icons">
+                                    <img class="login_myNavbar_images" src="SVGs/notifications.svg"/>
+                                </span>
+                                <div class="dropdown-content dropdown-menu-right">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                            </span>
+                            <span class="dropdown">
+                                <span class="dropbtn login_myNavbar_icons">
+                                    <img class="login_myNavbar_images" src="SVGs/account.svg"/>
+                                </span>
+                                <div class="dropdown-content dropdown-menu-right">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                                </div>
+                            </span>
+                        </div>                            
+                    </div>
+            </nav>
+
+    <!--    ******************************* NAVBAR ENDS HERE ************************** -->                      
+    <!--    ******************************* PAKIT LOGO ***********************    -->
+                        <div class = "login_pakit_logo"><img src = "Images/logo.png" class = "login_pakit"></div>
+    <!--    ******************************* PAKIT LOGO ENDS ***********************    -->
+    
+    <!--    ******************************* FACEBOOK LOGIN BOX STARTS HERE ***********************    -->
+                    <div class = "row">
+                        <div class = "col-md-offset-4 col-md-4 col-sm-offset-0 col-sm-12 col-xs-offset-1 col-xs-10 login_fb_login">
+                             <a href = "#">
+                                <p>                          
+                                    <span class = "login_fb_logo"><img src = "Images/fb_blue.png"></span>
+                                    <span class = "login_login_text">Login with Faceboook</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+    <!--    ******************************* FACEBOOK LOGIN BOX ENDS HERE ***********************    -->
+                
+                    <p class = "login_or">OR</p>
+                    
+    <!--    ******************************* FORM STARTS HERE ***********************    -->
+                    <div class = "row">
+                        <div class = "col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-0 col-xs-12 login_inputs">
+                            <form class = "login_email_and_password">
+                                <div class = "login_email_input">
+                                    <label id = "email_label" class = "login_label_feild"> Email </label>
+                                    <input type = "email" id = "email" class = "login_input_feild"/>
+                                </div>
+                                <div class = "login_password_input">
+                                    <label id = "password_label" class = "login_label_feild"> Password </label>
+                                    <input type = "password" id = "password" class = "login_input_feild"/>
+                                </div>
+                            
+    <!--    ******************************* LOGIN BUTTON STARTS ERE ***********************    -->                            
+                                <p class = "login_login_submit">
+                                    <button class = "login_login_button">Login</button>
+                                </p>
+    <!--    ******************************* LOGIN BUTTON ENDS HERE ***********************    -->                            
+                            
+                               <!--  <p class = "login_if_not_registered">Not registered? <a href = "signup.html" class = "login_create_an_account_link">Create an account</a></p> -->
+                            </form>   
+                        </div>
+                    </div>   
+                     <p class = "login_if_not_registered">Not registered? <a href = "signup.html" class = "login_create_an_account_link">Create an account</a></p> 
+    <!--    ******************************* FORM ENDS HERE ***********************    -->     
+                </div>
+            </body>
+    <!--    ******************************* BODY ENDS HERE ***********************    -->
+    </html>
